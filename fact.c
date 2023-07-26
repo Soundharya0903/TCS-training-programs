@@ -6,9 +6,12 @@ int main()
     scanf("%d",&n);
     m=fact(n);
     rem=m%10;
-    m=m/10;
+    
     if(rem==0)
     {
+        while(m%10==0){
+            m=m/10;   
+        }
         printf("%d",m%10);
     }
     else{
